@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rental Agreement Dapp - History</title>
+  <link href="style.css" rel="stylesheet">
+</head><body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Smart Contract</a>
+      </div>
+      <ul class="nav">
+        <li><a href="index.html">Owner</a></li>
+        <li><a href="tenant.html">Tenant</a></li>
+        <li><a href="history.html">History</a></li>
+      </ul>
+      <div class="account-info">
+        <span id="accountAddress">Loading...</span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-main">
+    <h2 class="page-title">Payment History</h2>
+    <div class="contract-box">
+      <p>(Payment history would be displayed here)</p>
+    </div>
+      <div class="history-table">
+        <table id="historyTable" style="width:100%; margin-top:2rem; border-collapse: collapse;">
+          <thead>
+            <tr>
+              <th>S.no</th>
+              <th>Tenant Address</th>
+              <th>Rent Paid (ETH)</th>
+              <th>Timestamp</th>
+              <th>TxHash</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Populated by app.js -->
+          </tbody>
+        </table>
+      </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.8.2/dist/web3.min.js"></script>
+  <script src="https://unpkg.com/truffle-contract@4.0.31/dist/truffle-contract.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
